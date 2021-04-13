@@ -1,0 +1,2 @@
+(window["webpackJsonp_app2"]=window["webpackJsonp_app2"]||[]).push([["chunk-2d0b3a2f"],{"28e8":function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" this is Hello VUE APP 2 ")])},o=[],u={name:"HelloPage",data:function(){return{}},mounted:function(){},methods:{}},c=u,i=t("2be6"),l=Object(i["a"])(c,a,o,!1,null,"974d5bec",null);n["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d0b3a2f.418de10a.js.map

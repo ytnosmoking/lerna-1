@@ -1,0 +1,2 @@
+(window["webpackJsonp_app2"]=window["webpackJsonp_app2"]||[]).push([["chunk-2d0ba09d"],{3604:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" this is Base View Vue APP2 ")])},u=[],s={name:"BasePage",data:function(){return{}},mounted:function(){},methods:{}},c=s,i=t("2be6"),o=Object(i["a"])(c,a,u,!1,null,"3e1c9186",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0ba09d.3b01b0b5.js.map

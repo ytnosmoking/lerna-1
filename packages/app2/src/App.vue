@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App2"/>
+    <el-menu mode="horizontal" :router="true">
+      <!-- <el-menu-item index=''>base</el-menu-item> -->
+       <el-menu-item index="/">app2---base -1</el-menu-item>
+      <el-menu-item index='/hello'>app2----hello</el-menu-item>
+    </el-menu>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
   }
 }
 </script>

@@ -1,0 +1,30 @@
+{
+  "name": "app-tools",
+  "version": "0.0.0",
+  "description": "tools for app",
+  "author": "yt <349915792@qq.com>",
+  "homepage": "https://github.com/ytnosmoking/lerna-1#readme",
+  "license": "ISC",
+  "main": "lib/app-tools.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytnosmoking/lerna-1.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ytnosmoking/lerna-1/issues"
+  },
+  "dependencies": {
+    "qiankun": "^2.4.0",
+    "vue-router": "^3.5.1"
+  }
+}

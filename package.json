@@ -5,12 +5,18 @@
     "packages/*"
   ],
   "devDependencies": {
+    "animate.css": "^4.1.1",
+    "babel-eslint": "^10.1.0",
     "inquirer": "^8.0.0",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "portfinder": "^1.0.28"
   },
   "scripts": {
     "install-all": "lerna bootstrap",
-    "task": "node task.js"
+    "task": "node task.js",
+    "copy": "node copy.js",
+    "delete": "node delete.js",
+    "write-config": "node packages/app-tools/lib/build-config.js"
   },
   "version": "1.0.0",
   "description": "test lerna",
