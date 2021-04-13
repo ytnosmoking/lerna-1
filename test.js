@@ -17,4 +17,4 @@ portfinder.getPort({ port: 8080 }, (err, port) => {
 
 });
 
-const tag = 'v1.0.1';
+const tag = 'v1.0.2';
