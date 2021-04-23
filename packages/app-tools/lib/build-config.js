@@ -3,6 +3,9 @@ const { getModules } = require('./app-tools');
 const paths = require('path');
 const allModules = getModules(paths.resolve(__dirname, '../../'));
 
+let basePort = process.argv[2] || 8080;
+
+
 const ignoreName = ['app-tools'];
 const filterModules = allModules.filter(mo => !ignoreName.includes(mo));
 
@@ -40,7 +43,7 @@ async function getModulesConfig() {
     };
   };
 
-  let basePort = 8081;
+
   for (let i = 0; i < filterModules.length; i++) {
     const mo = filterModules[i];
     const port = await getPort(basePort);
