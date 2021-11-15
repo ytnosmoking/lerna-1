@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './routes'
+// import router from './routes'
+
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI)
+
 Vue.config.productionTip = false
+
+
 
 
 
@@ -12,10 +16,13 @@ let instance = null;
 function render(props = {}) {
   const { container } = props;
   instance = new Vue({
-    router,
+    // router,
     render: h => h(App),
   }).$mount(container ? container.querySelector('#app') : '#app')
 }
+
+
+
 
 
 if (window.__POWERED_BY_QIANKUN__) {

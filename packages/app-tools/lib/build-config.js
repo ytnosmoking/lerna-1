@@ -6,7 +6,7 @@ const allModules = getModules(paths.resolve(__dirname, '../../'));
 let basePort = process.argv[2] || 8080;
 
 
-const ignoreName = ['app-tools'];
+const ignoreName = ['app-tools', 'cli'];
 const filterModules = allModules.filter(mo => !ignoreName.includes(mo));
 
 const portfinder = require('portfinder');

@@ -28,12 +28,37 @@ new Vue({
 
 
 registerMicroApps(
-  configJson.arrConfig.map(item => {
-    return {
+  configJson.arrConfig.reduce((pre, item) => {
+    if (item.name === 'app3') {
+      return [
+        ...pre, {
+          ...item,
+          name: 'app3-1',
+          activeRule: '/application-app3-1',
+          entry: isDev ? item.entry : `/app3-1/`
+        }, {
+          ...item,
+          name: 'app3-2',
+          activeRule: '/application-app3-2',
+          entry: isDev ? item.entry + '/test' : `/app3-2/`
+        },
+      ]
+    }
+    if (item.name === 'main') {
+      return pre
+    }
+    return [...pre, {
       ...item,
       entry: isDev ? item.entry : `/${item.name}/`
-    }
-  })
+    }]
+  }, [])
+  // configJson.arrConfig.map(item => {
+
+  //   return {
+  //     ...item,
+  //     entry: isDev ? item.entry : `/${item.name}/`
+  //   }
+  // })
 )
 
 start({
