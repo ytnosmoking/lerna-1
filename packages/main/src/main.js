@@ -35,12 +35,13 @@ registerMicroApps(
           ...item,
           name: 'app3-1',
           activeRule: '/application-app3-1',
-          entry: isDev ? item.entry : `/app3-1/`
+          entry: isDev ? item.entry : `/${item.name}/`
         }, {
           ...item,
           name: 'app3-2',
           activeRule: '/application-app3-2',
-          entry: isDev ? item.entry + '/test' : `/app3-2/`
+          // entry: isDev ? item.entry + '/test' : `/app3-2/`
+          entry: isDev ? item.entry + '/test' : `/${item.name}/test.html`
         },
       ]
     }

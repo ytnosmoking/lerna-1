@@ -14,6 +14,7 @@
   "scripts": {
     "install-all": "lerna bootstrap",
     "task": "node task.js",
+    "build": "node task.js build",
     "copy": "node copy.js",
     "delete": "node delete.js",
     "write-config": "node packages/app-tools/lib/build-config.js"

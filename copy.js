@@ -176,6 +176,10 @@ const rmDir = async (filePath) => {
     if (item === 'main') {
       return;
     }
+
+    if (!fs.existsSync('project')) {
+      fs.mkdirSync('project');
+    }
     const tarPath = path.join(__dirname, `./project/${item}/`);
     if (!fs.existsSync(tarPath)) {
       fs.mkdirSync(tarPath);
